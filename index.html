@@ -10,7 +10,7 @@
 <body>
   <div class="nav-container">
     <div class="nav-logo" style="display: inline-block;">
-      <h1><span>Abrar</span> Shakil</h1>
+      <h1 class="logo-text"><span>Abrar</span> Shakil</h1>
     </div>
     <span class="nav-home">
       <ul>
@@ -21,7 +21,25 @@
     </span>
     <span>
       <button><a href="#">Login</a></button>
+      <button onclick="myFunction()">D/N</button>
     </span>
   </div>
+  <div class="newtext">
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis sequi iste corporis earum, nulla nobis, impedit velit, illo optio et cum! Dolorem vitae aliquam eum beatae assumenda molestias nostrum fugit sed harum. Consequatur, nobis dicta quidem mollitia quis dolor, doloribus commodi fugiat illum cupiditate nulla ad asperiores in sapiente facere optio sunt tempora enim laudantium fuga eius reprehenderit! Debitis dicta ut aut ipsam qui veniam fugit perspiciatis, minus a impedit cumque explicabo tenetur quisquam nobis quod repellat delectus. Sit accusantium debitis tenetur, eaque maxime necessitatibus, sed quam praesentium illum, quasi aspernatur odio cum veniam voluptatem dolorum. Magnam, distinctio. Animi placeat fugit optio molestiae odio cum reprehenderit, eos nostrum quaerat, fuga quas blanditiis! Tempora aperiam veritatis amet nemo atque perspiciatis odio repellendus iste voluptatum autem quia, deleniti ipsa nostrum fugit suscipit magnam molestiae aspernatur, non ea quas recusandae itaque fugiat consequuntur. Quibusdam quo quae doloribus expedita. Est, voluptatibus! Provident velit magnam dolorum natus non aut praesentium, doloremque consequuntur saepe inventore accusantium tenetur molestias! Neque quod repellendus minus amet nemo quibusdam quam aspernatur quidem error, expedita rerum. Quas quidem nisi, alias minus accusamus vero debitis illum quasi laudantium officiis libero atque reiciendis quam, animi rem, dignissimos necessitatibus voluptas impedit recusandae id?</P>
+  </div>
+  <script>
+    function myFunction() {
+        var navContainer = document.querySelector(".nav-container");
+        var body = document.querySelector("body");
+        var textElements = document.querySelectorAll(".nav-element");
+        
+        navContainer.classList.toggle("nav-container-n");
+        body.classList.toggle("dark-mode");
+        
+        textElements.forEach(function(text) {
+            text.classList.toggle("nav-element-n");
+        });
+    }
+</script>
 </body>
 </html>

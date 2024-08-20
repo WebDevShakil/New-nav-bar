@@ -5,17 +5,26 @@
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  color: rgb(212, 212, 212)
+  color: rgb(223, 223, 223)
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+US+Modern:wght@100..400&display=swap');
 
 .nav-container{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(65, 58, 58);
     display: flex;
     padding: 10px 50px;
     justify-content:space-between ;
     height: 40px;
     align-items: center;
+}
+
+.dark-mode{
+    background-color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
+}
+.nav-container-n{
+    background-color: rgb(248, 248, 248);
+    color: rgb(0, 0, 0);
 }
 
 .nav-logo h1{
@@ -31,12 +40,15 @@
 .nav-element{
     text-decoration: none;
     font-size:1.5rem;
-    color: rgb(202, 202, 202);
+    color: rgb(255, 255, 255);
     margin-right: 30px;
     font-weight: 500;
     padding: 8px 20px;
     border-radius: 20px;
     transition: 0.3s;
+}
+.nav-element-n{
+    color: black!important;
 }
 .nav-container button {
     padding: 10px 15px;
@@ -61,4 +73,7 @@ h1 span{
     font-weight: 600;
     font-size: 35px;
     font-style: italic;
+}
+.newtext{
+    padding: 90px 20%;
 }
